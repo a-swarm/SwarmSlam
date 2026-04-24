@@ -7,7 +7,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Suppress FLANN/TBB warnings
 unset(FLANN_ROOT)
-cmake_policy(SET CMP0144 NEW)
+
+if(POLICY CMP0144)
+    cmake_policy(SET CMP0144 NEW)
+endif()
 
 # --- CRITICAL: Force CMake to look in /usr/local first ---
 # This ensures it finds your custom-built PCL, GTSAM, and TBB
