@@ -30,13 +30,12 @@ find_library(CPUID_LIBRARY NAMES cpuid libcpuid)
 set(PIPELINE_INCLUDE_DIRS
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/../../include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/lo_smoother/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/ndt_generic/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/svn_ndt/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/svn_icp/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/robin-map/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/compcallback/include
-    ${CMAKE_CURRENT_SOURCE_DIR}/../../extern/lidarcallback/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/lo_smoother/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/ndt_generic/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/svn_ndt/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/svn_icp/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/robin-map/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/lidarcallback/include
     
     ${PCL_INCLUDE_DIRS}
     ${VTK_INCLUDE_DIRS}
