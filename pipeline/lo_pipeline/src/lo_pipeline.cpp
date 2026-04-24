@@ -59,7 +59,7 @@ int main() {
     // const std::string param_imu = "../../../extern/compcallback/config/imu_config_berlin.json";
     const std::string param_lo = "../../../package/lo_smoother/config/lo_smoother_config.json";
 
-    const std::string param_solver = "../../../pacakge/ndt_generic/config/ndt_generic_config.json";
+    const std::string param_solver = "../../../package/ndt_generic/config/ndt_generic_config.json";
 
     // 3. INITIALIZE DECODERS
     // These classes handle the raw byte parsing of sensor packets
