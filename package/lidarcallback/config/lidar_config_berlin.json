@@ -1,0 +1,17 @@
+{
+    "lidar_parameter": {
+        "tb2s":                             [2.82625, 0.0, -1.7638],
+        "Cb2s":                             [-1.0000000,  0.0000000,  0.0000000, 0.0000000, 1.0000000,  0.0000000, 0.0000000,  0.0000000,  -1.0000000 ],
+        "channelStride":                    4,
+        "columnStride":                     1,
+        "zAxisFilter":                      [-250.0, -5.0],
+        "reflectionThreshold":              60,
+        "rangeFilter":                      [0.0, 400.0],
+        "vehicleFilterBox": {
+            "center":                       [-5.0, 0.0, 1.0],
+            "dimensions":                   [20.5, 4.0, 5.0]
+        },
+        "resolution":                       0.2,
+        "poolSize":                         8                      
+    }
+}

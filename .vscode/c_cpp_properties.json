@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Debian GCC",
+            "includePath": [
+                "/usr/include/eigen3",
+                "/usr/local/include/tbb",
+                "/usr/include/boost",
+                "/usr/include/pcl-1.14",
+                "/usr/include/flann",
+                "/usr/include/vtk-9.1",
+                
+                "${workspaceFolder}/pipeline",
+                "${workspaceFolder}/package",
+                "${workspaceFolder}/package/lidarcallback/include",
+                "${workspaceFolder}/package/ndt_generic/include",
+                "${workspaceFolder}/package/svn_icp/include",
+                "${workspaceFolder}/package/svn_ndt/include",
+                "${workspaceFolder}/package/lo_smoother/include",
+                "${workspaceFolder}/pipeline/lo_pipeline/include",
+                "${workspaceFolder}/package/robin-map/include",
+                "${workspaceFolder}/package/utils"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

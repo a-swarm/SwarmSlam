@@ -1,0 +1,28 @@
+{
+  "smoother_lag": 5.0,
+  "origin_lla": [0.0, 0.0, 0.0],
+
+  "isam2": {
+    "relinearize_threshold": 0.1,
+    "relinearize_skip": 1
+  },
+
+  "constant_velocity": {
+    "process_noise_trans_sigma": 0.1,
+    "process_noise_rot_sigma": 0.05
+  },
+
+  "map": {
+    "leaf_size": 1.0,
+    "radius": 800.0,
+    "skip": 10,
+    "max_points_per_voxel": 20, 
+    "enable_logging": true,  
+    "data_dir": "./../output/scan/keyframes/",
+    "keyframe_skip": 10
+  },
+
+  "solver": {
+    "type": "NDT_GENERIC"
+  }
+}
