@@ -39,6 +39,7 @@ set(PIPELINE_INCLUDE_DIRS
     ${CMAKE_CURRENT_SOURCE_DIR}/../../package/svn_icp/include
     ${CMAKE_CURRENT_SOURCE_DIR}/../../package/robin-map/include
     ${CMAKE_CURRENT_SOURCE_DIR}/../../package/lidarcallback/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../package/utils
     
     ${PCL_INCLUDE_DIRS}
     ${VTK_INCLUDE_DIRS}
