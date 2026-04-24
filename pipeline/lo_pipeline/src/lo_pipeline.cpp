@@ -591,11 +591,11 @@ int main() {
 
                 // Apply a 4-degree counter-clockwise rotation offset.
                 // In NED, Z is down. Looking from above, CCW is a negative rotation around Z.
-                float yaw_correction_rad = -5.711004f * (M_PI / 180.0f); 
-                Eigen::Quaternionf q_offset(Eigen::AngleAxisf(yaw_correction_rad, Eigen::Vector3f::UnitZ()));
+                // float yaw_correction_rad = -5.711004f * (M_PI / 180.0f); 
+                // Eigen::Quaternionf q_offset(Eigen::AngleAxisf(yaw_correction_rad, Eigen::Vector3f::UnitZ()));
                 
-                // Right-multiply to apply the offset in the vehicle's local frame
-                q_final = q_final * q_offset;
+                // // Right-multiply to apply the offset in the vehicle's local frame
+                // q_final = q_final * q_offset;
 
                 Eigen::Affine3f vehicle_pose = Eigen::Affine3f::Identity();
                 vehicle_pose.translation() << current_pos.cast<float>();
