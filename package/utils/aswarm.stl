@@ -1,0 +1,86 @@
+solid NED_ASwarm_Boat
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 -0.5
+      vertex -3.0 1.25 -0.5
+      vertex -3.0 -1.25 -0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 -0.5
+      vertex -3.0 -1.25 -0.5
+      vertex 3.0 -1.25 -0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 0.5
+      vertex 3.0 -1.25 0.5
+      vertex -3.0 -1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 0.5
+      vertex -3.0 -1.25 0.5
+      vertex -3.0 1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 -0.5
+      vertex 3.0 -1.25 -0.5
+      vertex 3.0 -1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 1.25 -0.5
+      vertex 3.0 -1.25 0.5
+      vertex 3.0 1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -3.0 1.25 -0.5
+      vertex -3.0 1.25 0.5
+      vertex -3.0 -1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -3.0 1.25 -0.5
+      vertex -3.0 -1.25 0.5
+      vertex -3.0 -1.25 -0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -3.0 1.25 -0.5
+      vertex 3.0 1.25 -0.5
+      vertex 3.0 1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex -3.0 1.25 -0.5
+      vertex 3.0 1.25 0.5
+      vertex -3.0 1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 -1.25 -0.5
+      vertex -3.0 -1.25 -0.5
+      vertex -3.0 -1.25 0.5
+    endloop
+  endfacet
+  facet normal 0 0 0
+    outer loop
+      vertex 3.0 -1.25 -0.5
+      vertex -3.0 -1.25 0.5
+      vertex 3.0 -1.25 0.5
+    endloop
+  endfacet
+endsolid NED_ASwarm_Boat

@@ -514,7 +514,7 @@ int main() {
         bool has_boat_model = false;
         std::string mesh_id = "boat_mesh";
 
-        if (pcl::io::loadPolygonFileSTL("../../../package/utils/boat.stl", boat_mesh) > 0) {
+        if (pcl::io::loadPolygonFileSTL("../../../package/utils/aswarm.stl", boat_mesh) > 0) {
             has_boat_model = true;
             viewer->addPolygonMesh(boat_mesh, mesh_id);
             
