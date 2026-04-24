@@ -44,7 +44,7 @@ void signal_handler(int) {
 int main() {
 
     // Pin the Main Thread to E-Cores (16-23) so it stays out of the P-Core pool
-    setThreadAffinity(20, 23, "Main Thread");
+    setThreadAffinity(18, 18, "Main Thread");
 
     // 1. SETUP SIGNAL HANDLING
     struct sigaction sa = {};
@@ -133,7 +133,7 @@ int main() {
     //     comp_iocontext.run(); 
     // });
     auto lidar_iothread = std::thread([&lidar_iocontext]() { 
-        setThreadAffinity(16, 19, "Lidar IO Thread");
+        setThreadAffinity(12, 13, "Lidar IO Thread");
         lidar_iocontext.run(); 
     });
 
@@ -141,7 +141,7 @@ int main() {
     // THREAD: LIDAR PROCESSING (Decoder)
     // --------------------------------------------------------------------------
     auto lidar_processing_thread = std::thread([&]() {
-        setThreadAffinity(20, 23, "Lidar Processing Thread");
+        setThreadAffinity(14, 16, "Lidar Processing Thread");
         std::cout << "[Thread] Lidar Processing thread started.\n";
         uint16_t last_processed_frame_id = 0; // Local state
 
@@ -216,7 +216,7 @@ int main() {
     // THREAD: SYNC & MAPPING
     // --------------------------------------------------------------------------
     auto sync_thread = std::thread([&]() {
-        setThreadAffinity(20, 23, "Sync Thread");
+        setThreadAffinity(17, 18, "Sync Thread");
         std::cout << "[Thread] sync thread started.\n";
 
         // --- Config ---
@@ -365,7 +365,7 @@ int main() {
     auto lo_thread = std::thread([&]() {
         // --- PIN STRICTLY TO P-CORES (0-15) ---
         std::cout << "[Thread] Smoother thread started.\n";
-        setThreadAffinity(0, 15, "LO/Solver Thread");
+        setThreadAffinity(1, 7, "LO/Solver Thread");
         
 
         // --- Config (Moved End Logic Here) ---
@@ -495,7 +495,7 @@ int main() {
     // THREAD: VISUALIZATION (PCL) - DYNAMIC LIO PIPELINE WITH CUSTOM STL
     // -------------------------------------------------------------------------- //
     auto viz_thread = std::thread([&]() {
-        setThreadAffinity(16, 19, "Visualization Thread");
+        setThreadAffinity(8, 11, "Visualization Thread");
         std::cout << "[Thread] Visualization thread started.\n";
 
         vtkObject::GlobalWarningDisplayOff();
