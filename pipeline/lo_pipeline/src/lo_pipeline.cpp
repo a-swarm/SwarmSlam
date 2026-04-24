@@ -117,8 +117,8 @@ int main() {
 
     // --- LIDAR SOCKET ---
     UdpSocketConfig lidarUdpConfig;
-    lidarUdpConfig.host = "192.168.75.10";
-    lidarUdpConfig.localInterfaceIp = "192.168.75.10";
+    lidarUdpConfig.host = "192.168.75.11";
+    lidarUdpConfig.localInterfaceIp = "192.168.75.11";
     lidarUdpConfig.port = 7502;
     lidarUdpConfig.bufferSize = 24832;
     lidarUdpConfig.reuseAddress = true; 
