@@ -572,17 +572,17 @@ int main() {
                 // =================================================================
                 // 3. UPDATE GPS TEXT
                 // =================================================================
-                // const double rad_to_deg = 180.0 / M_PI;
-                // double lat_deg = state.lat * rad_to_deg;
-                // double lon_deg = state.lon * rad_to_deg;
+                const double rad_to_deg = 180.0 / M_PI;
+                double lat_deg = state.lat * rad_to_deg;
+                double lon_deg = state.lon * rad_to_deg;
 
-                // std::stringstream ss;
-                // ss << std::fixed << std::setprecision(7)
-                // << "Lat: " << lat_deg << "\u00B0\n"
-                // << "Lon: " << lon_deg << "\u00B0\n"
-                // << std::setprecision(2) << "Alt: " << state.alt << " m";
+                std::stringstream ss;
+                ss << std::fixed << std::setprecision(7)
+                << "Lat: " << lat_deg << "\u00B0\n"
+                << "Lon: " << lon_deg << "\u00B0\n"
+                << std::setprecision(2) << "Alt: " << state.alt << " m";
 
-                // viewer->updateText(ss.str(), 1450, 50, 32, 1.0, 1.0, 1.0, "gps_text");
+                viewer->updateText(ss.str(), 1450, 50, 32, 1.0, 1.0, 1.0, "gps_text");
 
                 // =================================================================
                 // 4. DYNAMIC VEHICLE MESH POSE UPDATE (WITH YAW CORRECTION)
